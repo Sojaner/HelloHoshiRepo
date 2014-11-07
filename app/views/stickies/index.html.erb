@@ -1,2 +1,9 @@
 <h1>Stickies</h1>
+<p>Number of saved stickies: <%= @stickies.length %></p>
+<ul>
+<% @stickies.each do |sticky| %>
+  <%= sticky.title %>
+<% end %>
+
+</ul>
 <%= link_to "Create Sticky", new_sticky_url %> 
